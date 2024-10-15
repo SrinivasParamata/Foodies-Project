@@ -1,4 +1,3 @@
-
 import styles from "../Meals-Styles/MealsPrev.module.css";
 import { CreateContext } from "./MealContext";
 import { useContext, useEffect, useState } from "react";
@@ -9,7 +8,6 @@ export default function MealsPrev() {
   const path = useLocation().pathname;
   const match = path.replace("/Meals/", "");
   const [mealData, setMealData] = useState(null);
-  console.log(Meals,"MP");
 
   useEffect(() => {
     if (match && Meals) {
@@ -31,7 +29,7 @@ export default function MealsPrev() {
     <>
       <header className={styles.header}>
         <div className={styles.image}>
-          <img src={image} fill alt={title} />
+          <img src={image} alt={title} /> {/* Remove the fill attribute */}
         </div>
         <div className={styles.headerText}>
           <h1>{title}</h1>
