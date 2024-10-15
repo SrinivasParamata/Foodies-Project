@@ -7,6 +7,17 @@
   font-size: 1.5rem;
 }
 
+.ErrorMsg {
+  color: #d8000c; /* Red color for error text */
+  padding: 10px; /* Padding around the text */
+  border: 1px solid #d8000c; /* Red border */
+  border-radius: 5px; /* Rounded corners */
+  margin: 10px 0; /* Margin for spacing */
+  text-align: center; /* Center the text */
+  background-color: #ffb3b3; /* Light red background for better visibility */
+}
+
+
 .header h1 {
   font-family: 'Montserrat', sans-serif;
 }
